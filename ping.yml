@@ -1,7 +1,7 @@
--name: ping the node
- hosts: mysql
- become: yes
+- name: ping the node
+  hosts: mysql
+  become: yes
 
- tasks:
-  -name: ping the server 
-   ansible.builtin.ping:
+  tasks:
+  - name: ping the server 
+    ansible.builtin.ping:

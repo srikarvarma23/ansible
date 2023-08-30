@@ -9,8 +9,8 @@
   tasks:
    - name: asia cup
      ansible.builtin.debug: 
-      message: "asia cup is starting today"
+      msg: "asia cup is starting today"
 
    - name: asia cup with variables
      ansible.builtin.debug:
-      message: "today {{TOURNAMENT}}, eagerly waiting to see {{FAV_PLAYER}} hitting {{ACHIEVEMENT}} for fun"
+      msg: "today {{TOURNAMENT}}, eagerly waiting to see {{FAV_PLAYER}} hitting {{ACHIEVEMENT}} for fun"

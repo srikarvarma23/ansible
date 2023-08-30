@@ -1,0 +1,16 @@
+- name: doing variables 
+  hosts: mysql
+  become: yes
+  vars:
+   TOURNAMENT: ASIA CUP
+   FAV_PLAYER: KOHLI
+   ACHIEVEMENT: CENTURIES
+
+  tasks:
+   - name: asia cup
+     ansible.builtin.debug: 
+      message: "asia cup is starting today"
+
+   - name: asia cup with variables
+     ansible.builtin.debug:
+      message: "today {{TOURNAMENT}}, eagerly waiting to see {{FAV_PLAYER}} hitting {{ACHIEVEMENT}} for fun"

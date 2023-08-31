@@ -9,8 +9,8 @@
     prompt: please enter your FAV_PLAYER
     private: false 
   tasks:
-  - name: print the task level
-    vars:
-     FAV_PLAYER: Kohli-task
-    ansible.buitlin.debug:
-     msg: "the fav player is {{FAV_PLAYER}}"
+   - name: print the task level
+     vars:
+      FAV_PLAYER: Kohli-task
+     ansible.buitlin.debug:
+      msg: "the fav player is: {{FAV_PLAYER}}"

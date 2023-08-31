@@ -4,4 +4,4 @@
   tasks:
    - name: print the variables in command line 
      ansible.builtin.debug:
-      msg: "the variable name is kohli {{FAV_PLAYER}}"
+      msg: "the variable name is {{FAV_PLAYER}}"

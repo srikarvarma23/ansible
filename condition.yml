@@ -1,0 +1,11 @@
+- name: conditions in ansible 
+  hosts: mysql
+
+  vars:
+   FAV_PLAYER: KOHLI 
+
+  tasks:
+   - name: run if it fav player is kohli
+     ansible.builtin.debug:
+      msg: "my fav player is {{FAV_PLAYER}}"
+     when: FAV_PLAYER == "KOHLI"

@@ -1,5 +1,5 @@
 - name: doing variables 
-  hosts: mysql
+  hosts: mysql 
   become: yes
   vars:
    TOURNAMENT: ASIA CUP

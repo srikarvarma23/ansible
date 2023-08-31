@@ -1,6 +1,7 @@
 [mysql]
 roboshop-ind-prod-db-mysql-01.join-devops.online
 
+
 [mysql:vars]
-mysql_username=srikar
-mysql_password=varma
+mysql_username=srinivas
+mysql_password=subha

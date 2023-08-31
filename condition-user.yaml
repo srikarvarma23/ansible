@@ -10,3 +10,7 @@
    - name: print the output 
      ansible.builtin.debug:
       msg: "output is {{srikar}}"
+
+   - name: print the exit status
+     ansible.builtin.debug:
+      msg: "output is {{srikar.rc}}"

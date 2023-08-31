@@ -1,0 +1,18 @@
+- name: variables at task level
+  hosts: mysql
+
+  vars_play:
+   IDOL: MOM
+   FAV_PLAYER: KOHLI
+
+  tasks:
+   - name: inherit the values from play
+     ansible.builtin.debug:
+      msg: "my {{IDOL}}, {{FAV_PLAYER}} is my support system"
+   - name: inherit the values from task
+     vars_task:
+     - IDOL: MOM
+       FAV_PLAYER: KOHLI
+       SWEET: PARAMANNAMM
+     ansible.builtin.debug:
+      msg: "my {{IDOL}}, {{FAV_PLAYER}} and {{SWEET}} is my support system"

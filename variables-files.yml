@@ -5,6 +5,6 @@
   - variables1.yml
 
   tasks:
-  - name: asia cup is starting
+  - name: asia cup
     ansible.builtin.debug:
-     msg: "{{TOURNAMENT}} starts today and eagerly waiting to see {{FAV_PLAYER}} hitting {{ACHIEVEMENT}}"
+     msg: "The {{TOURNAMENT}}, starts today and eagerly waiting to see my {{FAV_PLAYER}} hitting {{ACHIEVEMENT}}"

@@ -12,7 +12,6 @@
   - name: inherit the values from task and override
     vars:
     - IDOL: MOM
-      FAV_PLAYER: KOHLI
       SWEET: PARAMANNAMM
     ansible.builtin.debug:
      msg: "my {{IDOL}}, {{FAV_PLAYER}} and {{SWEET}} is my support system"

@@ -16,6 +16,7 @@
       msg: "output is {{srikar.rc}}"
 
    - name: create the user 
+     become: yes
      ansible.builtin.user:
       name: roboshop
      when: srikar.rc != 0

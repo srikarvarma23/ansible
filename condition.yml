@@ -2,7 +2,7 @@
   hosts: mysql
 
   vars:
-   FAV_PLAYER: KOHLI 
+   FAV_PLAYER: KOHLIi
 
   tasks:
    - name: run if it fav player is kohli

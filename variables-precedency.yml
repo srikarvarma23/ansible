@@ -1,7 +1,7 @@
 - name: variables precedency 
   hosts: mysql
   vars:
-   FAV_PLAYER= Kohli-play
+   FAV_PLAYER: Kohli-play
   vars_files:
   - variables.yaml
   vars_prompt:
@@ -11,6 +11,6 @@
   tasks:
   - name: print the task level
     vars:
-     FAV_PLAYER= Kohli-task
+     FAV_PLAYER: Kohli-task
     ansible.buitlin.debug:
      msg: "the fav player is {{FAV_PLAYER}}"

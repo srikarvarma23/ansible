@@ -2,8 +2,8 @@
   hosts: mysql
   vars:
    FAV_PLAYER: Kohli-play
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars_prompt:
   - name: FAV_PLAYER
     prompt: please enter your FAV_PLAYER

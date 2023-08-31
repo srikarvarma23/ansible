@@ -1,0 +1,7 @@
+- name: variables in command line
+  hosts: mysql
+
+  tasks:
+   - name: print the variables in command line 
+     ansible.builtin.debug:
+      msg: "the variable name is kohli {{FAV_PLAYER}}"

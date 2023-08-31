@@ -2,7 +2,7 @@
   hosts: mysql
 
   vars:
-  - age: 26
+  - age: 25
   - name: "srikar varma"
   - isDevOps: true
   - skills:

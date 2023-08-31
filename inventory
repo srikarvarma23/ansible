@@ -7,6 +7,8 @@ roboshop-ind-prod-db-mysql-02.join-devops.online
 roboshop-uk-dev-app-catalogue-01.join-devops.online
 roboshop-uk-dev-app-catalogue-02.join-devops.online
 
-[db:srikar]
-mysql
+[mysql:vars]
+mysql_username= mysqlsrikar
+mysql_password= mysqlvarma
+
 

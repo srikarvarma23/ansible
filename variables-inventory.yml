@@ -1,0 +1,7 @@
+- name: variables inventory
+  hosts: mysql
+
+  tasks:
+   - name: print mysql username amd password
+     ansible.builtin.debug:
+      msg: "username: {{mysql_username}}, password: {{mysql_password}}"

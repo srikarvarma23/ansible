@@ -1,0 +1,10 @@
+- name: variables from files
+  hosts: localhost
+
+  vars_files:
+  - variables1.yml
+
+  tasks:
+  - name: asia cup is starting
+    ansible.builtin.debug:
+     msg: "{{TOURNAMENT}} starts today and eagerly waiting to see {{FAV_PLAYER}} hitting {{ACHIEVEMENT}}"

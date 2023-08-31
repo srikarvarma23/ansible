@@ -4,5 +4,5 @@
   - variables1.yml
   tasks:
   - name: print variables
-     ansible.builtin.debug:
-      msg: "The {{TOUR}}, starts today and eagerly waiting to see my {{FAV_PLAYER}} hitting the {{ACHIEVEMENT}}"
+    ansible.builtin.debug:
+     msg: "The {{TOUR}}, starts today and eagerly waiting to see my {{FAV_PLAYER}} hitting the {{ACHIEVEMENT}}"

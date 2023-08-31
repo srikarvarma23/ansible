@@ -5,6 +5,6 @@
   - variables1.yml
 
   tasks:
-   - name: srikar varma
+   - name: print variables
      ansible.builtin.debug:
-      msg: "The {{TOURNAMENT}}, starts today and eagerly waiting to see my {{FAV_PLAYER}} hitting {{ACHIEVEMENT}}"
+      msg: "The {{TOURNAMENT}}, starts today and eagerly waiting to see my {{FAV_PLAYER}} hitting the {{ACHIEVEMENT}}"

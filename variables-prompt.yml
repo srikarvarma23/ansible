@@ -1,0 +1,16 @@
+- name: variables prompt
+  hosts: mysql
+
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter your username
+    private: false 
+
+  - name: PASSWORD
+    prompt: please enter your password
+    private: true 
+  tasks:
+
+  - name: print prompt
+    ansible.builtin.debug:
+     msg: "username: {{USERNAME}}, password: {{PASSWORD}}"

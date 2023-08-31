@@ -1,8 +1,8 @@
 - name: variables from files
-  hosts: localhost
+  hosts: mysql
   vars_files:
-  - variables.yml
+  - variables.yaml
   tasks:
-  - name: print variables
-    ansible.builtin.debug:
-     msg: "The {{TOUR}}, starts today and eagerly waiting to see my {{FAV_PLAYER}} hitting the {{ACHIEVEMENT}}"
+   - name: print variables
+     ansible.builtin.debug:
+      msg: "The {{TOUR}}, starts today and eagerly waiting to see my {{FAV_PLAYER}} hitting the {{ACHIEVEMENT}}"

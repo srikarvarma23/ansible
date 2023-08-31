@@ -1,0 +1,8 @@
+- name : check user exist or not 
+  hosts: mysql
+
+  tasks:
+   - name: check user roboshop exist or not 
+     ansible.builtin.command: id roboshop
+     register: srikar 
+     

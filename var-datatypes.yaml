@@ -1,0 +1,30 @@
+- name: datatypes
+  hosts: mysql
+
+  vars:
+  - age: 26
+  - name: "srikar varma"
+  - isDevOps: true
+  - skills:
+    - DevOps
+    - cricket
+    - badminton
+  - experience:
+      DevOps: 1
+      IBM: 2
+  tasks: 
+  - name: print age 
+    ansible.builtin.debug:
+     msg "{{age}}"    
+  - name: print name 
+    ansible.builtin.debug:
+     msg "{{name}}"    
+  - name: print boolean
+    ansible.builtin.debug:
+     msg "{{isDevOps}}"    
+  - name: print skills 
+    ansible.builtin.debug:
+     msg "{{skills}}"    
+  - name: print experience 
+    ansible.builtin.debug:
+     msg "{{experience}}"    

@@ -6,7 +6,12 @@
    - name: advanced loop
      ansible.builtin.yum:
       name: "{{item.name}}"
-      state: "{{item.state}}
+      state: "{{item.state}}"
+
      loop:
-     - {name: 'maven', state: 'installed'}   #list of map#
-     - {name: 'postfix', state: 'absent'}
+     - {name: 'maven' , state: 'installed'}
+     - {name: 'postfix' , state: 'absent'}
+
+     
+
+     

@@ -1,0 +1,12 @@
+- name: advanced loops
+  hosts: mysql
+  become: yes
+
+  tasks:
+   - name: advanced loop
+     ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: {{item.state}}
+     loop:
+     - {name: 'maven', state: 'installed'}   #list of map#
+     - {name: 'postfix', state: 'absent'}

@@ -1,0 +1,11 @@
+- name: install packages using loops
+  hosts: mysql
+
+  tasks:
+   - name: do loops using ansible
+     ansible.builtin.yum:
+      name: {{item}}
+      state: installed
+     loop:
+     - nginx
+     - git

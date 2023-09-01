@@ -5,9 +5,9 @@
    - name: doing loop
      ansible.builtin.debug:
       msg: "hello {{item}}"
-   loop:
-   - kohli
-   - sathvik
-   - srikar
-   - varma
+     loop:
+     - kohli
+     - sathvik
+     - srikar
+     - varma
 

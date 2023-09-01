@@ -1,0 +1,13 @@
+- name: loops concept
+  hosts: mysql
+
+  tasks:
+   - name: doing loop
+     ansible.builtin.debug:
+      msg: "hello {{ITEM}}"
+   loop:
+   - kohli
+   - sathvik
+   - srikar
+   - varma
+

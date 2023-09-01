@@ -1,6 +1,7 @@
 - name: install packages using loops
   hosts: mysql
-
+  become: yes
+  
   tasks:
    - name: do loops using ansible
      ansible.builtin.yum:
